@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="TeladeLogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="area-do-login">
+        <div class="Login">
+            <div><img src="./fotos/Coral.png">
+            </div>
+
+            <form id="login-form">
+                <input type="text" name="nome" placeholder="login" id="username" autofocus>
+                <input type="password" name="senha" id="password" placeholder="senha">
+                <input type="submit" value="Entrar">
+            </form>
+            <p>Ainda não tem uma conta?<a href="#">Crie sua conta</a></p>
+        </div>
+    </section>
+
+
+    <script>
+        var loginForm = document.getElementById("login-form");
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+
+            if (username === "Coral" && password === "Admin") {
+                location.href = "Cardapio.html"
+                alert("Login bem-sucedido!");
+             
+            } else {
+                alert("Credenciais inválidas. Tente novamente.");
+            }
+        });
+    </script>
+    
+</body>
+</html>

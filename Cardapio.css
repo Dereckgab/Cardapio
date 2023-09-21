@@ -1,0 +1,13 @@
+body {
+  background-color: rgba(99, 91, 91, 0.5);
+  background-image: url('./fotos/comida.jpg');
+}
+.page-link{
+  background-color: black;
+  color: #ffff;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+  margin-left: 20px;
+}
